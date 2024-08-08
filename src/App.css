@@ -1,0 +1,111 @@
+.App {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
+  border: 1px solid #e9ecef; /* Light border for the card */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60%;
+  margin-right: 10px;
+}
+
+.task-input button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-clip: padding-box;
+}
+
+.task-input button:hover {
+  border-radius: 10px;
+  background-color: #3b3b3b;
+}
+
+.delete-selected {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(230, 103, 107);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.delete-selected:disabled {
+  background-color: black;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+}
+
+.task-item input {
+  margin-right: 10px;
+}
+
+.task-item span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.task-item span.completed {
+  text-decoration: line-through;
+}
+
+.task-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+}
+
+.task-item button:hover {
+  color: #a71d2a;
+}
